@@ -31,32 +31,31 @@ const singerStyle ={
 function App(){
   return(
     <div className="App">
-      <Person></Person>
-      <Person></Person>
-      <Person></Person>
+      <Person nayok = "Rubel" nayika = "Bithi"></Person>
+      <Person nayok = "Manna" nayika = "Moushumi"></Person>
+      <Person nayok = "Riaj" nayika = "shabnur"></Person>
       <p>New Componet: Hurray</p>
-      <Friend></Friend>
-      <Friend></Friend>
-      <Friend></Friend>
+      <Friend name = "A" from="Childhood"></Friend>
+      <Friend name = "B" from="school"></Friend>
+      <Friend name = "D" from="University"></Friend>
     </div>
   );
 }
 
-function Person(){
+function Person(props){
   return(
     <div className="wrapper">
-      <h1>Sakib Hasan</h1>
-      <h2 style={{color: 'white'}} >Sher Ali Gazi</h2>
+      <h1>{props.nayok}</h1>
+      <p>{props.nayika}</p>
   
     </div>
   );
 }
-function Friend(){
+function Friend(props){
   return(
     <div className="wrapper1">
-      <h1>Sakib Hasan</h1>
-      <h2 style={{color: 'white'}} >Sher Ali Gazi</h2>
-  
+      <h1>{props.name}</h1>
+      <p>{props.from}</p>
     </div>
   );
 }
