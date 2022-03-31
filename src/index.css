@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/*.App{
+  background: rgb(199, 253, 235);
+}*/
+.wrapper{
+  background: rgb(236, 161, 99);
+  border: 2px dashed greenyellow;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 20px;
+}
+.wrapper1{
+  background: rgb(255, 118, 175);
+  border: 2px dashed rgb(47, 50, 255);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 20px;
+}
